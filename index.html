@@ -1,0 +1,112 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p>Enter Amount</p>
+                <input value="100" type="number">
+            </div>
+            <div class="dropdown">
+                <div class="from">
+                    <p>From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png" id="fromFlag">
+                        <select name="from" id="fromSelect">
+                            <option value="USD" data-flag="US">USD</option>
+                            <option value="INR" data-flag="IN">INR</option>
+                            <option value="EUR" data-flag="FR">EUR</option>
+                            <option value="AUD" data-flag="AU">AUD</option>
+                            <option value="AED" data-flag="AE">AED</option>
+                            <option value="AFN" data-flag="AF">AFN</option>
+                            <option value="XCD" data-flag="AG">XCD</option>
+                            <option value="ALL" data-flag="AL">ALL</option>
+                            <option value="AMD" data-flag="AM">AMD</option>
+                           
+                        </select>
+                    </div>
+                </div>
+                <i class="fa-solid fa-right-left"></i>
+                <div class="to">
+                    <p>TO</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/IN/flat/64.png" id="toFlag">
+                        <select name="to" id="toSelect">
+                            <option value="INR" data-flag="IN">INR</option>
+                            <option value="USD" data-flag="US">USD</option>
+                            <option value="EUR" data-flag="FR">EUR</option>
+                            <option value="AUD" data-flag="AU">AUD</option>
+                            <option value="AED" data-flag="AE">AED</option>
+                            <option value="AFN" data-flag="AF">AFN</option>
+                            <option value="XCD" data-flag="AG">XCD</option>
+                            <option value="ALL" data-flag="AL">ALL</option>
+                            <option value="AMD" data-flag="AM">AMD</option>
+                       
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="msg">1USD=84INR</div>
+            <button>Get Exchange Rate</button>
+        </form>
+    </div>
+    <script src="app.js"></script>
+    <script src="demo.js"></script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Currency Converter</h1>
+    <div class="converter-box">
+      <input type="number" id="amount" placeholder="Enter Amount" />
+      <div class="currency-select">
+        <img id="from-flag" class="flag-icon" src="https://flagsapi.com/US/flat/64.png" alt="From Flag" />
+      <select id="from-currency">
+        <option value="USD">USD</option>
+        <option value="INR">INR</option>
+       
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+      <span>to</span>
+      <div class="currency-select">
+        <img id="to-flag" class="flag-icon" src="https://flagsapi.com/IN/flat/64.png" alt="To Flag" />
+      <select id="to-currency">
+        <option value="INR">INR</option>
+        <option value="USD">USD</option>
+     
+        <option value="GBP">GBP</option>
+      </select>
+    </div>
+      <button id="convert-btn">Convert</button>
+    </div>
+    <div id="result"></div>
+  </div>
+
+  
+  <script src="app.js"></script>
+</body>
+</html>
+

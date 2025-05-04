@@ -1,0 +1,142 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #2b5876, #4e4376);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .container {
+    background-color: #ffffff;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    overflow: hidden; 
+  }
+  
+
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  
+
+  .converter-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  
+  input, select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #6c63ff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(108, 99, 255, 0.4);
+  }
+  
+  
+  span {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  
+  button {
+    padding: 12px;
+    background: #148502;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #5848e2;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+
+  #result {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #f3f3f3;
+    color: #222;
+    font-size: 18px;
+    border-radius: 8px;
+    min-height: 24px;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    body {
+      padding: 20px;
+      height: auto;
+      align-items: flex-start;
+    }
+  
+    .container {
+      padding: 20px 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    input, select, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    #result {
+      font-size: 16px;
+    }
+  }
+  
+
+  .currency-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+  }
+  
+  .flag-icon {
+    width: 32px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
